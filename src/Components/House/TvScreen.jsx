@@ -17,9 +17,8 @@ export default function TvScreen(props)
     const linledinTexture = useLoader(TextureLoader, "./logos/logoLinkedin.png");
     const cvTexture = useLoader(TextureLoader, "./logos/logoCV.png");
     const sourceTexture = useLoader(TextureLoader, "./logos/logoSource.png");
-
-    let i=0
-    
+    const workTexture = useLoader(TextureLoader, "./logos/work.png");
+   
 
       useFrame(({ clock }) => {
 
@@ -105,6 +104,15 @@ export default function TvScreen(props)
       >
         <planeGeometry/>
         <meshBasicMaterial  map={sourceTexture} transparent />
+      </mesh>
+
+      <mesh 
+        position={[0.8, 2.25, -3.48]} 
+        scale={[0.09, 0.12, 0.12]}
+        onClick={() => handleClick("mailto:max2002guillon@gmail.com")}
+      >
+        <planeGeometry/>
+        <meshBasicMaterial  map={workTexture} transparent />
       </mesh>
     </group>
     
