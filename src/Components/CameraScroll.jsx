@@ -1122,7 +1122,7 @@ export default function CameraScroll(props) {
                 maxWidth={1}
                 material-opacity={0}                
             >
-                I pratice boxing
+                I practice boxing
             </Text>
         </group>
 
